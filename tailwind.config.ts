@@ -40,6 +40,12 @@ const config: Config = {
       screens: {
         xs: "480px",
       },
+      height: {
+        section: "700px",
+      },
+      maxHeight: {
+        section: "700px",
+      },
       lineHeight: {
         "extra-loose": "7rem",
       },

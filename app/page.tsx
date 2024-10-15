@@ -1,15 +1,17 @@
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import WorkGrid from "@/components/WorkGrid";
+import Projects from "@/components/Projects";
 import { navItems } from "@/data/data";
+import About from "@/components/About";
 
 const page = () => {
   return (
-    <main className="w-full mx-auto bg-black-100">
-      <FloatingNav navItems={navItems} />
+    <main className="w-full mx-auto bg-black-200">
       <Hero />
-      <div className="bg-black-200 h-screen w-full">
-        <WorkGrid />
+      <FloatingNav navItems={navItems} />
+      <div className="max-w-7xl mx-auto">
+        <Projects />
+        <About />
       </div>
     </main>
   );

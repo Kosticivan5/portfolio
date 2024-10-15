@@ -2,10 +2,9 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import AuroraBackground from "./ui/AuroraBackground";
-import BannerButton from "./ui/BannerButton";
-import TextEffect from "./ui/TextEffect";
-
+import AuroraBackground from "./AuroraBackground";
+import BannerButton from "./BannerButton";
+import TextEffect from "./TextEffect";
 const AuroraBackgroundDemo = () => {
   return (
     <AuroraBackground>
@@ -23,9 +22,10 @@ const AuroraBackgroundDemo = () => {
           duration: 0.9,
           ease: "easeInOut",
         }}
+        viewport={{ once: true }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <div className="font-normal text-center md:text-2xl dark:text-neutral-200 py-4">
+        <div className="font-normal text-center md:text-2xl dark:text-neutral-200 py-4 ">
           Hi, I&apos;m Ivan, a Front-end Developer
         </div>
         <BannerButton />
