@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className=" w-full max-w-7xl pt-6 pb-8 mx-auto grid place-items-center gap-8"
+      className=" w-full max-w-7xl p-6 pb-8 mx-auto grid place-items-center gap-8"
     >
       <div>
         <h2 className="text-2xl md:text-4xl font-bold dark:text-white text-center pb-3 max-w-[1400px] ">

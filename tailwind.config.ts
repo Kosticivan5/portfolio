@@ -49,7 +49,12 @@ const config: Config = {
       lineHeight: {
         "extra-loose": "7rem",
       },
-
+      backgroundImage: {
+        "card-gradient":
+          "radial-gradient(circle, rgba(15,18,60,1) 3%, rgba(63,69,109,1) 76%)",
+        "grid-gradient":
+          "linear-gradient(344deg, rgba(6,20,39,1) 0%, rgba(0,0,0,1) 67%)",
+      },
       animation: {
         aurora: "aurora 120s linear infinite",
         shimmer: "shimmer 3s linear infinite",
@@ -74,7 +79,21 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [
+    addVariablesForColors,
+    function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "bg-grid": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+      );
+    },
+  ],
 };
 
 export default config;

@@ -21,13 +21,13 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
       {/* blur */}
       <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-gray-500 transform scale-[0.72]  rounded-full blur-3xl" />
       {/* blur */}
-      <div className="relative shadow-xl bg-gray-900 border border-gray-800 p-4 h-full overflow-hidden rounded-2xl flex flex-col justify-between items-start gap-4">
+      <div className="relative shadow-xl bg-grid-gradient backdrop-blur-sm p-4 h-full overflow-hidden rounded-2xl flex flex-col justify-between items-start gap-4">
         <div className="flex flex-col justify-center gap-2 w-full">
-          <div className="w-full flex items-center justify-center bg-white-100 bg-gradient-to-br from-[#614385] to-[#516395] rounded-lg  overflow-hidden">
+          <div className="w-full flex items-center justify-center bg-card-gradient rounded-lg  overflow-hidden">
             <img
               className="w-5/6 h-full object-cover rounded-t-xl rotate-x-6 skew-x-6 translate-y-4 max-w-xs"
               src={image}
-              alt=""
+              alt={title}
             />
           </div>
 
@@ -35,7 +35,7 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
             {title}
           </h1>
 
-          <p className="font-normal text-base text-slate-500  relative z-50">
+          <p className="font-normal text-base text-slate-300  relative z-50">
             {subtitle}
           </p>
         </div>
