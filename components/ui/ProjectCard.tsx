@@ -17,9 +17,9 @@ type ImageData = {
 
 const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
   return (
-    <div className="h-full relative max-w-sm sm:min-w-72 md:min-w-80 min-h-96">
+    <div className="h-full relative max-w-sm sm:min-w-72 md:min-w-80 min-h-96 md:max-w-full shadow-lg ">
       {/* blur */}
-      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-gray-500 transform scale-[0.72]  rounded-full blur-3xl" />
+      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-gray-500 transform scale-[0.80]  rounded-full blur-3xl" />
       {/* blur */}
       <div className="relative shadow-xl bg-grid-gradient backdrop-blur-sm p-4 h-full overflow-hidden rounded-2xl flex flex-col justify-between items-start gap-4">
         <div className="flex flex-col justify-center gap-2 w-full">

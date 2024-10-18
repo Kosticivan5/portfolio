@@ -2,7 +2,8 @@ export const navItems = [
   { name: "home", link: "/" },
   { name: "projects", link: "#projects" },
   { name: "about", link: "#about" },
-  { name: "contact", link: "#contact" },
+  { name: "experience", link: "#experience" },
+  { name: "contacts", link: "#contact" },
 ];
 
 export const projectsItems = [
@@ -89,21 +90,39 @@ export const bentoGridItems = [
   },
   {
     title: "My tech stack",
-    // description:
-    //   "Understand the impact of effective communication in our lives.",
+    description: "I’m always working to improve",
     // header: <Skeleton />,
     // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "Let's work together?",
+    // description: "Join the quest for understanding and enlightenment.",
     // header: <Skeleton />,
     // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
+    title: "Currently building ai platform for tourists",
+    description: "Experiencing the thrill of bringing ideas to life.",
     // header: <Skeleton />,
     // icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+  },
+];
+
+export const jobExperienceItems = [
+  {
+    icon: ".././images/programmer.png",
+    title: "Front-end Developer",
+    text: " As a front-end developer in an IT team, I build responsive web apps for internal clients, focusing on delivering user-friendly interfaces, using React and Redux.",
+  },
+  {
+    icon: ".././images/freelance1.png",
+    title: "Freelance Web Developer",
+    text: "As a freelance web developer, I focused on building responsive, user-friendly web applications, delivering custom solutions for various clients using advanced technologies.",
+  },
+
+  {
+    icon: ".././images/study.png",
+    title: "Web Development Tutor",
+    text: "I taught students how to build websites from scratch, focusing on HTML, CSS, and JavaScript, helping them master the fundamentals of front-end development.",
   },
 ];
