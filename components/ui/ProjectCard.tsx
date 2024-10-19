@@ -27,6 +27,9 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
               className="w-5/6 h-full object-cover rounded-t-xl rotate-x-6 skew-x-6 translate-y-4 max-w-xs"
               src={image}
               alt={title}
+              layout="responsive"
+              width={200}
+              height={100}
             />
           </div>
 
@@ -43,7 +46,7 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
           <div className="flex py-2 items-center gap-2 ">
             {icons.map(({ src, name }) => {
               return (
-                <Image key={name} className="w-4 sm:w-5" src={src} alt={name} />
+                <img key={name} className="w-4 sm:w-5" src={src} alt={name} />
               );
             })}
           </div>

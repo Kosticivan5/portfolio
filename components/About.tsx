@@ -8,7 +8,6 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import Subtitle from "./ui/Subtitle";
-import Image from "next/image";
 
 const About = () => {
   const [copied, setCopied] = useState(false);
@@ -42,7 +41,7 @@ const About = () => {
               <>
                 <div className="h-full w-full bg-grid-gradient dark:bg-grid-white/[0.05] absolute top-0 left0"></div>
                 <div className="absolute z-10 -bottom-20 -left-1 w-full h-full ">
-                  <Image
+                  <img
                     className="sm:w-full h-full object-cover md:scale-75 [mask-image:radial-gradient(ellipse_at_bottom_left,transparent_0%,black)]"
                     src="/images/communication.png"
                     alt=""
@@ -52,7 +51,7 @@ const About = () => {
             )}
             {i === 1 && (
               <div>
-                <Image
+                <img
                   className="object-contain scale-150 absolute -bottom-28 w-full h-full [mask-image:radial-gradient(ellipse_at_bottom,transparent_0%,black)]"
                   src="/images/globe.png"
                   alt="globe"
@@ -61,7 +60,7 @@ const About = () => {
             )}
             {i === 2 && (
               <div>
-                <Image
+                <img
                   className="absolute bottom-0 right-0"
                   src="/images/skeleton.png"
                   alt="skeleton"
@@ -101,7 +100,7 @@ const About = () => {
             {i === 5 && (
               <div>
                 <div className="h-full w-full bg-grid-gradient dark:bg-grid-white/[0.05] absolute top-0 left0 "></div>
-                <Image
+                <img
                   className="absolute -bottom-24 -right-24 scale-75"
                   src="/images/code_snippet.png"
                   alt="skeleton"
