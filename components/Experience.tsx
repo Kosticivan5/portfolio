@@ -1,4 +1,5 @@
 import Subtitle from "./ui/Subtitle";
+import Image from "next/image";
 import { jobExperienceItems } from "@/data/data";
 const Experience = () => {
   return (
@@ -10,11 +11,12 @@ const Experience = () => {
       <div className="w-full mx-auto grid md:grid-cols-4 gap-4 text-white">
         {jobExperienceItems.map((item, i) => (
           <div
+            key={i}
             className={`relative ${
               i === 2 ? "md:col-start-2 md:col-end-4" : "md:col-span-2"
             }  rounded-xl p-4 flex sm:flex-row items-start flex-col sm:items-center gap-2 bg-grid-gradient shadow-lg shadow-cyan-700/20`}
           >
-            <img
+            <Image
               className={`w-16 ${i === 2 && "rotate-[25deg] w-14"}`}
               src={item.icon}
               alt={item.title}

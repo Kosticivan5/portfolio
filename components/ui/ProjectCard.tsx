@@ -1,5 +1,4 @@
 "use client";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 
@@ -24,7 +23,7 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
       <div className="relative shadow-xl bg-grid-gradient backdrop-blur-sm p-4 h-full overflow-hidden rounded-2xl flex flex-col justify-between items-start gap-4">
         <div className="flex flex-col justify-center gap-2 w-full">
           <div className="w-full flex items-center justify-center bg-card-gradient rounded-lg  overflow-hidden">
-            <img
+            <Image
               className="w-5/6 h-full object-cover rounded-t-xl rotate-x-6 skew-x-6 translate-y-4 max-w-xs"
               src={image}
               alt={title}
@@ -44,7 +43,7 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
           <div className="flex py-2 items-center gap-2 ">
             {icons.map(({ src, name }) => {
               return (
-                <img key={name} className="w-4 sm:w-5" src={src} alt={name} />
+                <Image key={name} className="w-4 sm:w-5" src={src} alt={name} />
               );
             })}
           </div>
