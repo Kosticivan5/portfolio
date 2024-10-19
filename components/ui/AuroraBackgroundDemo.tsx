@@ -13,7 +13,7 @@ const AuroraBackgroundDemo = () => {
           <span className="text-white-100">with Code</span>
         </div> */}
 
-      <TextEffect words="Designing Seamless Interfaces for Modern Web Applicationsss" />
+      <TextEffect words="Designing Seamless Interfaces for Modern Web Applications" />
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

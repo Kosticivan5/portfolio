@@ -110,18 +110,18 @@ export const bentoGridItems = [
 
 export const jobExperienceItems = [
   {
-    icon: ".././images/programmer.png",
+    icon: "/images/programmer.png",
     title: "Front-end Developer",
     text: " As a front-end developer in an IT team, I build responsive web apps for internal clients, focusing on delivering user-friendly interfaces, using React and Redux.",
   },
   {
-    icon: ".././images/freelance1.png",
+    icon: "/images/freelance1.png",
     title: "Freelance Web Developer",
     text: "As a freelance web developer, I focused on building responsive, user-friendly web applications, delivering custom solutions for various clients using advanced technologies.",
   },
 
   {
-    icon: ".././images/study.png",
+    icon: "/images/study.png",
     title: "Web Development Tutor",
     text: "I taught students how to build websites from scratch, focusing on HTML, CSS, and JavaScript, helping them master the fundamentals of front-end development.",
   },

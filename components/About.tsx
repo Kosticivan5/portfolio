@@ -44,7 +44,7 @@ const About = () => {
                 <div className="absolute z-10 -bottom-20 -left-1 w-full h-full ">
                   <Image
                     className="sm:w-full h-full object-cover md:scale-75 [mask-image:radial-gradient(ellipse_at_bottom_left,transparent_0%,black)]"
-                    src=".././images/communication.png"
+                    src="/images/communication.png"
                     alt=""
                   />
                 </div>
@@ -54,7 +54,7 @@ const About = () => {
               <div>
                 <Image
                   className="object-contain scale-150 absolute -bottom-28 w-full h-full [mask-image:radial-gradient(ellipse_at_bottom,transparent_0%,black)]"
-                  src=".././images/globe.png"
+                  src="/images/globe.png"
                   alt="globe"
                 />
               </div>
@@ -63,7 +63,7 @@ const About = () => {
               <div>
                 <Image
                   className="absolute bottom-0 right-0"
-                  src=".././images/skeleton.png"
+                  src="/images/skeleton.png"
                   alt="skeleton"
                 />
               </div>
@@ -103,7 +103,7 @@ const About = () => {
                 <div className="h-full w-full bg-grid-gradient dark:bg-grid-white/[0.05] absolute top-0 left0 "></div>
                 <Image
                   className="absolute -bottom-24 -right-24 scale-75"
-                  src=".././images/code_snippet.png"
+                  src="/images/code_snippet.png"
                   alt="skeleton"
                 />
               </div>
