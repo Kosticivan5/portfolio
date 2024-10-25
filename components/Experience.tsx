@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="w-full max-w-7xl px-6 py-8 mx-auto grid place-items-center gap-8 "
+      className="w-full max-w-7xl px-6 py-8 mx-auto grid place-items-center gap-8 pb-14 "
     >
       <Subtitle title="My work" highlight="experience" />
       <div className="w-full mx-auto grid md:grid-cols-4 gap-4 text-white">
@@ -16,7 +16,7 @@ const Experience = () => {
             }  rounded-xl p-4 flex sm:flex-row items-start flex-col sm:items-center gap-2 bg-grid-gradient shadow-lg shadow-cyan-700/20`}
           >
             <img
-              className={`w-16 ${i === 2 && "rotate-[25deg] w-14"}`}
+              className={`w-16 ${i === 1 && "rotate-[25deg] w-14"}`}
               src={item.icon}
               alt={item.title}
             />

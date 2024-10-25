@@ -13,7 +13,7 @@ const AuroraBackgroundDemo = () => {
           <span className="text-white-100">with Code</span>
         </div> */}
 
-      <TextEffect words="Designing Seamless Interfaces for Modern Web Applications" />
+      <TextEffect words="Seamless Interfaces for Modern Web Applications" />
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ const AuroraBackgroundDemo = () => {
           ease: "easeInOut",
         }}
         viewport={{ once: true }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        className="relative flex flex-col gap-1 items-center justify-center px-4"
       >
         <div className="font-normal text-center md:text-2xl dark:text-neutral-200 py-4 ">
           Hi, I&apos;m Ivan, a Front-end Developer

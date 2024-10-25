@@ -23,21 +23,18 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
       <div className="relative shadow-xl bg-grid-gradient backdrop-blur-sm p-4 h-full overflow-hidden rounded-2xl flex flex-col justify-between items-start gap-4">
         <div className="flex flex-col justify-center gap-2 w-full">
           <div className="w-full flex items-center justify-center bg-card-gradient rounded-lg  overflow-hidden">
-            <Image
-              className="w-5/6 h-full object-cover rounded-t-xl rotate-x-6 skew-x-6 translate-y-4 max-w-xs"
+            <img
+              className="w-5/6 h-full  object-cover rounded-t-xl rotate-x-6 skew-x-6 translate-y-4 max-w-xs"
               src={image}
               alt={title}
-              layout="responsive"
-              width={200}
-              height={100}
             />
           </div>
 
-          <h1 className="font-bold text-xl text-white relative z-50">
+          <h2 className="font-bold  text-lg md:text-xl text-white relative z-50">
             {title}
-          </h1>
+          </h2>
 
-          <p className="font-normal text-base text-slate-300  relative z-50">
+          <p className="font-normal md:text-base text-slate-300  relative z-50 text-sm">
             {subtitle}
           </p>
         </div>
@@ -53,7 +50,7 @@ const ProjectCard = ({ title, subtitle, icons, image }: ImageData) => {
 
           <a
             href="/"
-            className=" px-4 py-2 text-gray-300 flex items-center justify-center gap-1 hover:bg-white hover:text-black transition-all ease-in-out duration-300 text-xs sm:text-sm"
+            className=" px-4 py-2 text-gray-300 flex items-center justify-center gap-1 hover:bg-white hover:text-black transition-all ease-in-out duration-300 text-[10px] xs:text-xs sm:text-sm"
           >
             Check live site
             <FaLocationArrow className="text-[10px]" />

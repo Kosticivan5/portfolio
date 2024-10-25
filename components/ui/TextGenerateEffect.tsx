@@ -54,9 +54,9 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
-      <div>
+      <div className="flex gap-1">
         <h1
-          className="text-3xl md:text-5xl lg:text-6xl font-bold dark:text-white text-center py-6 sm:px-8 max-w-[1400px]"
+          className="text-2xl md:text-3xl lg:text-4xl font-bold dark:text-white text-left pb-4"
           style={{ lineHeight: "1.2" }}
         >
           {renderWords()}

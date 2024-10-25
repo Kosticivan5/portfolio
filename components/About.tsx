@@ -8,6 +8,7 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import Subtitle from "./ui/Subtitle";
+import AdditionalTools from "./ui/AdditionalTools";
 
 const About = () => {
   const [copied, setCopied] = useState(false);
@@ -99,9 +100,9 @@ const About = () => {
             )}
             {i === 5 && (
               <div>
-                <div className="h-full w-full bg-grid-gradient dark:bg-grid-white/[0.05] absolute top-0 left0 "></div>
+                <div className="h-full w-full bg-grid-gradient dark:bg-grid-white/[0.05] absolute top-0 left-0 "></div>
                 <img
-                  className="absolute -bottom-24 -right-24 scale-75"
+                  className="absolute -bottom-32 -right-24 scale-75"
                   src="/images/code_snippet.png"
                   alt="skeleton"
                 />
@@ -110,6 +111,7 @@ const About = () => {
           </BentoGridItem>
         ))}
       </BentoGrid>
+      <AdditionalTools />
     </section>
   );
 };

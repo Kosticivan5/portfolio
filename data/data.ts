@@ -110,19 +110,66 @@ export const bentoGridItems = [
 
 export const jobExperienceItems = [
   {
-    icon: "/images/programmer.png",
+    icon: "/images/coding.png",
     title: "Front-end Developer",
-    text: " As a front-end developer in an IT team, I build responsive web apps for internal clients, focusing on delivering user-friendly interfaces, using React and Redux.",
+    text: " As a front-end developer in 'Rosbank' IT team, I build responsive web apps for internal clients, focusing on delivering user-friendly interfaces, using React and Redux.",
+  },
+
+  {
+    icon: "/images/study.png",
+    title: "Web Development Tutor",
+    text: "In 'Kodland' I taught students how to build websites from scratch, focusing on HTML, CSS, and JavaScript, helping them master the fundamentals of front-end development.",
   },
   {
     icon: "/images/freelance1.png",
     title: "Freelance Web Developer",
     text: "As a freelance web developer, I focused on building responsive, user-friendly web applications, delivering custom solutions for various clients using advanced technologies.",
   },
+];
 
+export const techIcons = [
   {
-    icon: "/images/study.png",
-    title: "Web Development Tutor",
-    text: "I taught students how to build websites from scratch, focusing on HTML, CSS, and JavaScript, helping them master the fundamentals of front-end development.",
+    name: "figma",
+    icon: "images/icons/figma.svg",
+  },
+  {
+    name: "git",
+    icon: "images/icons/git.svg",
+  },
+  {
+    name: "jira",
+    icon: "images/icons/jira.svg",
+  },
+  {
+    name: "open AI",
+    icon: "images/icons/openai.svg",
+  },
+  {
+    name: "react query",
+    icon: "images/icons/reactquery.svg",
+  },
+  {
+    name: "react router",
+    icon: "images/icons/reactrouter.svg",
+  },
+  {
+    name: "redux",
+    icon: "images/icons/redux.svg",
+  },
+  {
+    name: "sass",
+    icon: "images/icons/sass.svg",
+  },
+  {
+    name: "vite",
+    icon: "images/icons/vitejs.svg",
+  },
+  {
+    name: "zod",
+    icon: "images/icons/zod.svg",
+  },
+  {
+    name: "three.js",
+    icon: "images/icons/threejs.svg",
   },
 ];
